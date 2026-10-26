@@ -29,16 +29,16 @@ npm start
 node server.mjs
 \`\`\`
 
-浏览器打开 [http://127.0.0.1:4173/#home](http://127.0.0.1:4173/#home)。
+浏览器打开 [http://127.0.0.1:4174/#home](http://127.0.0.1:4174/#home)。
 
 ## 分享给其他人查看
 
 同一局域网内的访问者可以使用：
 
 \`\`\`text
-http://你的本机IP:4173/#home
+http://你的本机IP:4174/#home
 \`\`\`
 
-需要确保系统防火墙允许 TCP 4173 端口。若需要长期公网访问，可将 \`dist\` 目录部署到 Nginx、IIS、GitHub Pages 或任意静态网站托管服务。
+需要确保系统防火墙允许 TCP 4174 端口。若需要长期公网访问，可将 \`dist\` 目录部署到 Nginx、IIS、GitHub Pages 或任意静态网站托管服务。
 
 在线演示：[knowledge-foundation-simple-demo.woodsy-maple-3352.chatgpt.site](https://knowledge-foundation-simple-demo.woodsy-maple-3352.chatgpt.site/#home)
