@@ -1,0 +1,9 @@
+{
+  "name": "knowledge-management-simple-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "知识底座首页、知识概览与知识认证简易演示",
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173A72">
+  <title>知识底座 · 简易版 Demo</title>
+  <meta name="description" content="知识底座首页、知识概览与知识认证简易演示">
+  <link rel="stylesheet" href="./styles.css?v=138">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+  <header class="global-header">
+    <a class="brand" href="#home" data-route="home" aria-label="返回知识底座首页">
+      <span class="brand-mark"><i></i><i></i><i></i></span>
+      <span><b>知识底座</b></span>
+    </a>
+    <div class="global-actions">
+      <button class="global-icon search-trigger" data-action="global-search" aria-label="全局搜索">
+        <span class="search-glyph"></span>
+      </button>
+      <div class="domain-switcher global-domain" id="domain-switcher" tabindex="0" aria-label="切换领域">
+        <span class="platform-orbit"><i></i></span>
+        <span class="sr-only"><small>当前领域</small><b id="top-domain-name">经营</b></span>
+        <span id="top-domain-badge" class="sr-only">经</span>
+        <div class="domain-menu" id="domain-menu"></div>
+      </div>
+      <button class="global-icon notice-trigger" data-action="notifications" aria-label="通知"><span class="bell-glyph"></span><i class="notice-dot"></i></button>
+      <button class="language-btn" data-action="language" aria-label="切换语言">EN</button>
+      <div class="role-switcher global-role" id="role-switcher" aria-label="当前用户">
+        <span class="avatar" id="role-avatar">管</span>
+        <span class="sr-only"><small>当前视角</small><b id="role-name">领域知识管理员</b></span>
+      </div>
+    </div>
+  </header>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="workspace-switcher" id="workspace-switcher">
+        <button class="workspace-panel" id="workspace-button" type="button" aria-label="切换领域" aria-expanded="false">
+          <span class="workspace-logo" id="workspace-domain-badge">经</span>
+          <span><b id="workspace-domain-name">经营领域</b></span>
+          <i class="workspace-chevron" aria-hidden="true"></i>
+        </button>
+        <div class="workspace-domain-menu" id="workspace-domain-menu" hidden></div>
+      </div>
+      <nav id="main-nav" aria-label="主导航"></nav>
+    </aside>
+
+    <main id="main-content">
+      <header class="topbar">
+        <div class="breadcrumb"><span class="home-glyph" aria-hidden="true">◆</span><span id="page-section">知识概览</span><b>/</b><strong id="page-crumb">知识全景图</strong></div>
+      </header>
+
+      <section class="page" id="page" aria-live="polite" tabindex="-1"></section>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <div id="modal-root"></div>
+  <script src="./g6.min.js?v=5"></script>
+  <script src="./graph-data.js?v=54"></script>
+  <script src="./metric-workbook-data.js?v=2"></script>
+  <script src="./graph-workbench.js?v=96"></script>
+  <script src="./panorama-graph.js?v=14"></script>
+  <script src="./app.js?v=152"></script>
+</body>
+</html>
